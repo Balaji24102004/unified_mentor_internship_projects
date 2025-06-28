@@ -1,270 +1,86 @@
-# 🏅 Olympics Data Analysis Project (1976–2008)
+# 📊 Unified Mentor Internship Projects
 
-This project explores and analyzes Summer Olympics data from 1976 to 2008. It provides visual insights and predictive modeling using Python's data science libraries.
+This repository contains two beginner-level Data Science and Machine Learning projects completed as part of the **Unified Mentor Internship Program**:
 
----
-
-## 📂 Dataset
-
-The dataset contains information about **all medal winners** in the Summer Olympics from 1976 (Montreal) to 2008 (Beijing).  
-📥 [Download Dataset from Google Drive](https://drive.google.com/file/d/1EHMliUCEb8k6VhkpxK00oaY6GQtkwrhg/view?usp=sharing)
+1. 🌸 Iris Flower Classification  
+2. 🏅 Olympics Data Analysis (1976–2008)
 
 ---
 
-## 📌 Objectives
+## 🌸 1. Iris Flower Classification
 
-- Analyze medal distribution over the years
-- Identify top-performing athletes and countries
-- Explore gender participation
-- Build a machine learning model to predict medal wins
+### 📌 Objective
+To classify iris flowers into one of three species based on the length and width of their petals and sepals using machine learning.
 
----
+### 📂 Dataset
+- Source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris)
+- Features: Sepal Length, Sepal Width, Petal Length, Petal Width
+- Target: Species (`Iris-setosa`, `Iris-versicolor`, `Iris-virginica`)
 
-## 🛠 Tools & Libraries
-
-- Python
-- Pandas, NumPy
-- Matplotlib, Seaborn
+### 🛠 Tools & Libraries
+- Python, Pandas, NumPy
+- Seaborn, Matplotlib
 - Scikit-learn
 
----
+### 🔍 Visualizations
+- Pairplot (Seaborn)
+- Correlation heatmap
+- Count plots and scatter plots by species
 
-## 📊 Analysis & Visualizations
-
-- Top cities that hosted the Olympics
-- Cities with the most events
-- Most common sports/events
-- Top 10 medal-winning athletes
-- Gender distribution in events
-
----
-
-## 🤖 Machine Learning
-
-A **Logistic Regression** model was trained to predict whether an athlete would win a medal based on:
-
-- Country
-- Sport
-- Gender
-
-Since the dataset includes only medal winners, synthetic class `0` data was created to train the model properly.
-
----
-
-## ✅ Results
-
-- **Accuracy Score**: Reported from logistic regression model
-- **Insights**: Countries like the USA and Russia dominated over decades
-- **Gender Bias**: Significant difference in male vs. female participation
-
----
-
-## 📁 Project Structure
-
-Olympics_Data_Analysis_Project/
-│
-├── olympics_data.csv # Original dataset
-├── Olympics_Data_Analysis.ipynb # Main Jupyter notebook
-├── README.md # This file
-└── requirements.txt # Python dependencies
-
-yaml
-Copy
-Edit
-
----
-
-## 🔮 Future Improvements
-
-- Use Decision Trees or Random Forest for better classification
-- Add more features like Event type or Year
-- Export visualizations as interactive dashboards (e.g., using Plotly)
-
----
-
-## 🙌 Credits
-
-- Dataset courtesy of Kaggle & public Olympic records.
-- Guided by Unified Mentor Internship Project guidelines.
-
----
-
-## 📜 License
-
-This project is for academic and learning purposes only.# 🌸 Iris Flower Classification Project
-
-This project is a classic machine learning classification task where the goal is to predict the species of an Iris flower based on its sepal and petal measurements.
-
----
-
-## 📂 Dataset
-
-The dataset used is the famous **Iris dataset** which contains 150 observations of iris flowers with 4 features:
-
-- Sepal Length
-- Sepal Width
-- Petal Length
-- Petal Width
-
-And a target variable:
-- Species (`Iris-setosa`, `Iris-versicolor`, `Iris-virginica`)
-
----
-
-## 📌 Objectives
-
-- Perform exploratory data analysis (EDA) on the Iris dataset.
-- Visualize relationships between features.
-- Train multiple machine learning models to classify the flower species.
-- Compare their performance.
-
----
-
-## 🛠 Tools & Libraries Used
-
-- Python
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- Scikit-learn
-
----
-
-## 🧪 ML Algorithms Applied
-
+### 🤖 ML Algorithms Used
 - Logistic Regression
 - K-Nearest Neighbors (KNN)
-- Decision Tree Classifier
-- Random Forest Classifier
+- Decision Tree
+- Random Forest
 - Support Vector Machine (SVM)
 
-Each model was evaluated using accuracy, confusion matrix, and classification report.
+### ✅ Result
+All models showed high accuracy. SVM and Random Forest gave the best results with >95% accuracy.
 
 ---
 
-## 📊 Visualizations Included
+## 🏅 2. Olympics Data Analysis (1976–2008)
 
-- Pairplots to show relationships between features
-- Heatmap for correlation matrix
-- Count plots of target labels
-- Scatter plots with species coloring
+### 📌 Objective
+To analyze Summer Olympics medal data and build a predictive model for medal-winning based on country, sport, and gender.
 
----
+### 📂 Dataset
+- Source: [Google Drive Link](https://drive.google.com/file/d/1EHMliUCEb8k6VhkpxK00oaY6GQtkwrhg/view?usp=sharing)
+- Data includes all medal winners from 1976 to 2008.
+- Columns: Year, City, Sport, Discipline, Event, Athlete, Gender, Country, Medal
 
-## ✅ Results
-
-- All models performed well; most achieved >90% accuracy.
-- SVM and Random Forest showed the best overall performance.
-
----
-
-## 📁 Project Structure
-
-IRIS_Classification/
-│
-├── IRIS_CLASSIFICATION_UNIFIED.ipynb # Main Jupyter Notebook
-├── iris.csv # Iris dataset (if applicable)
-├── README.md # Project summary
-└── requirements.txt # Python packages
-
-yaml
-Copy
-Edit
-
----
-
-## 🚀 Future Scope
-
-- Hyperparameter tuning using GridSearchCV
-- Add cross-validation
-- Deploy as a simple web app using Streamlit
-
----
-
-## 🙌 Credits
-
-- Dataset source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris)
-
----
-
-## 📜 License
-
-This project is open-source and intended for educational purposes.
-# unified_mentor_internship_projects
-UNIFIED_MENTPR
-# 🌸 Iris Flower Classification Project
-
-This project is a classic machine learning classification task where the goal is to predict the species of an Iris flower based on its sepal and petal measurements.
-
----
-
-## 📂 Dataset
-
-The dataset used is the famous **Iris dataset** which contains 150 observations of iris flowers with 4 features:
-
-- Sepal Length
-- Sepal Width
-- Petal Length
-- Petal Width
-
-And a target variable:
-- Species (`Iris-setosa`, `Iris-versicolor`, `Iris-virginica`)
-
----
-
-## 📌 Objectives
-
-- Perform exploratory data analysis (EDA) on the Iris dataset.
-- Visualize relationships between features.
-- Train multiple machine learning models to classify the flower species.
-- Compare their performance.
-
----
-
-## 🛠 Tools & Libraries Used
-
-- Python
-- Pandas, NumPy
+### 🛠 Tools & Libraries
+- Python, Pandas, NumPy
 - Matplotlib, Seaborn
 - Scikit-learn
 
----
+### 📊 EDA Highlights
+- Top cities that hosted Olympics
+- Events and disciplines by frequency
+- Top medal-winning athletes
+- Gender distribution
+- Medal trends over time
 
-## 🧪 ML Algorithms Applied
+### 🤖 Machine Learning
+- Logistic Regression model to predict whether an athlete would win a medal.
+- Synthetic class `0` created for non-winners to handle class imbalance.
 
-- Logistic Regression
-- K-Nearest Neighbors (KNN)
-- Decision Tree Classifier
-- Random Forest Classifier
-- Support Vector Machine (SVM)
-
-Each model was evaluated using accuracy, confusion matrix, and classification report.
-
----
-
-## 📊 Visualizations Included
-
-- Pairplots to show relationships between features
-- Heatmap for correlation matrix
-- Count plots of target labels
-- Scatter plots with species coloring
-
----
-
-## ✅ Results
-
-- All models performed well; most achieved >90% accuracy.
-- SVM and Random Forest showed the best overall performance.
+### ✅ Result
+- Model trained with acceptable accuracy.
+- Clear trends observed: USA and Russia dominated; gender bias in events noted.
 
 ---
 
 ## 📁 Project Structure
 
-IRIS_Classification/
+Unified_Projects/
 │
-├── IRIS_CLASSIFICATION_UNIFIED.ipynb # Main Jupyter Notebook
-├── iris.csv # Iris dataset (if applicable)
-├── README.md # Project summary
-└── requirements.txt # Python packages
+├── IRIS_CLASSIFICATION_UNIFIED.ipynb # Iris notebook
+├── Olympics_Data_Analysis_Project.ipynb # Olympics notebook
+├── iris.csv # Iris dataset (if needed)
+├── olympics_data.csv # Olympics dataset
+├── README.md # Combined project summary
+└── requirements.txt # Python packages list
 
 yaml
 Copy
@@ -272,20 +88,26 @@ Edit
 
 ---
 
-## 🚀 Future Scope
+## 🚀 Future Improvements
 
-- Hyperparameter tuning using GridSearchCV
-- Add cross-validation
-- Deploy as a simple web app using Streamlit
+### For Iris Project:
+- Apply GridSearchCV for hyperparameter tuning
+- Deploy as a web app using Streamlit
+
+### For Olympics Project:
+- Add Random Forest or Decision Trees
+- Analyze by athlete nationality and gender more deeply
+- Build interactive dashboards using Plotly
 
 ---
 
 ## 🙌 Credits
 
-- Dataset source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris)
+- [UCI ML Repository](https://archive.ics.uci.edu/ml/datasets/iris)
+- Public Olympics data from Kaggle & Google Drive
+- Guided by Unified Mentor Internship Program
 
 ---
 
 ## 📜 License
-
-This project is open-source and intended for educational purposes.
+This repository is for educational purposes only.
